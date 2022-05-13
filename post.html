@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>maxwell constructure</title>
+
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - numpy
+        - matplotlib
+    </py-env>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        #fl{
+            float:left;
+            overflow-y: scroll;
+            max-height: 450px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="post.html">maxwell construction</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="post.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/Build_and_publish_your_own_Python_package_to_PyPi_library_website_changed.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1> maxwell construction by using python </h1>
+                        <h2 class="subheading"> pyScript to run Python code in browser! </h2>
+                        <span class="meta">Posted by <a href="https://github.com/mohamadamarneh" target="_blank">mohamad amarneh</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>In the past, we could not use the Python language to write on websites, but thanks to the PyScript framework, we can activate the Python code on the browser !.</p>
+
+
+                    
+                    <img  class="img-responsive" src="img/1_g32fcfD2t5D2HrQ0CMGTXw.png" alt="">
+                    
+                    
+
+                    <h2 class="section-heading"> maxwell construction python code </h2>
+
+                    <p>  In thermodynamic equilibrium, a necessary condition for stability is that pressure P does not increase with volume V. This basic consistency requirement—and similar ones for other conjugate pairs of variables—are sometimes violated in analytic models for first order phase transitions. The most famous case is the Van der Waals equation for real gases, see Fig.  where a typical isotherm is drawn (black curve). The Maxwell construction is a way of correcting this deficiency. The decreasing right hand part of the curve in Fig.  describes a diluted gas, while its left part describes a liquid. The intermediate (rising) part of the curve in Fig.  would be correct, if these two parts were to be joined smoothly—meaning in particular that the system would remain also in this region spatially uniform with a well defined density.</p>
+                    <img class="img-responsive" src="img/600px-Vanderwaals2.jpg" alt="">
+                    <span class="caption text-muted"> relation between P and V in maxwell construction (area 1 = area 2) </span>
+
+                    <h2 class="section-heading">run Python code in browser </h2>
+
+                    <p>We will do the special code data for my Maxwell construction project in a web browser where we will take a picture of the equilibrium, temperature and density points for each.</p>
+                    <img class="img-responsive" src="img/Captureaasd.PNG" alt="">
+
+                    <!-- <a href="#">
+                        <img class="img-responsive" src="img/post-sample-image.jpg" alt="">
+                    </a> -->
+                    <span class="caption text-muted"> adding python code in html page </span>
+
+
+                    <h2 class="section-heading"> See results  </h2>
+                    <p> you can see results by button</p>
+                    <span class="caption text-muted"> It's not the fastest framework out there </span>
+                    <button type="button" onclick="res()" class="btn btn-primary">results</button>
+                    <div class="container" id="ram" style="display: none;">
+    <!-- <div id="plot"   output="plot" ></div> -->
+    <div  >
+    <div id="plot"></div>
+    <py-script id="fl"  >
+from numpy import*
+from matplotlib.pyplot import*
+#maxwell construction
+P=0.0#P=0.0  #initial value to loop
+tem=[]    #tempreture list
+nv=[]
+nl=[]
+#t=0.229
+t=0.229
+for T in arange(t,0.296,0.001):
+    for p in arange(P,0.2,0.0001):
+        P=p            #when back to looby it is take short time to achive the error
+        if p >= 0.03317:
+            P=p+0.000505
+        if p >= 0.0352 :
+            P=p+0.000605
+        if p >= 0.03626 :
+            P=p+0.0008
+        r=[]     #clearing roots listes
+        k=[]
+        #newtonRaphson method
+        for x0 in arange(0.1,0.9,0.001):  #the range to find the three roots
+            def func( x ): 
+                return x*T/(1-x) -x*x -p # adding (-p) makes a points like a roots (we cheats the finding roots program)
+            
+            def derivFunc( x ): 
+                return (T/(1-x)**2)  -2*x 
+        # Function to find the root 
+            def newtonRaphson( x ): 
+                h = func(x) / derivFunc(x) 
+                while abs(h) >= 0.00000001: 
+                    h = func(x)/derivFunc(x) 
+                # x(i+1) = x(i) - f(x) / f'(x) 
+                    x = x - h 
+                r.append(x)#مكررة قيم تتطلع 
+            # Initial values assumed 
+            newtonRaphson(x0)
+        r.sort()#تصاعدي القيم نرتب
+        n=len(r)#القيم عدد ايجاد
+        #k=[]#تكرار دون الجذور
+        k.append(r[0])
+        for i in range(1,n):
+            if r[i]-k[-1]<=.0000009:   #
+                d=1# if جملة لاكمال فقط بالمشروع  له علاقة لا 
+            else:
+                k.append(r[i])
+        #if k[1] true 
+        def y( c ): #trabezoid method #first area integral , we can complits this with 1 integration from root(point) 1 to 3
+            return  c*T/(1-c)-c**2 -p                                                     #but we choose two integrals.
+        def tra1(a, b, n):        #note**adding (-p)make this easier to integrating , without(-p) we most be use double integral
+            h = (b - a) / n 
+            s = (y(a) + y(b)) 
+            i = 1
+            while i < n: 
+                s += 2 * y(a + i * h) 
+                i += 1
+            return ((h / 2) * s)
+        x10 = k[0]      #lower limit
+        x2n = k[-1]        #upper limit
+        n = 100
+        I1=tra1(x10, x2n, n)     #I1 name to the first area
+        
+        if abs(I1) <=0.00005:#0.00005 
+            print("at T=" , T , "p=",p) # achieves the error so move to another degree of T
+            print( 'roots', k)
+            tem.append(T)   #lists to graph between T,n
+            nv.append(k[0])
+            nl.append(k[-1])
+            break
+    </py-script>
+            <py-script output="plot" >
+from numpy import*
+from matplotlib.pyplot import*
+#maxwell construction
+P=0.0#P=0.0  #initial value to loop
+tem=[]    #tempreture list
+nv=[]
+nl=[]
+#t=0.229
+t=0.229
+for T in arange(t,0.296,0.001):
+    for p in arange(P,0.2,0.0001):
+        P=p            #when back to looby it is take short time to achive the error
+        if p >= 0.03317:
+            P=p+0.000505
+        if p >= 0.0352 :
+            P=p+0.000605
+        if p >= 0.03626 :
+            P=p+0.0008
+        r=[]     #clearing roots listes
+        k=[]
+        #newtonRaphson method
+        for x0 in arange(0.1,0.9,0.001):  #the range to find the three roots
+            def func( x ): 
+                return x*T/(1-x) -x*x -p # adding (-p) makes a points like a roots (we cheats the finding roots program)
+            
+            def derivFunc( x ): 
+                return (T/(1-x)**2)  -2*x 
+        # Function to find the root 
+            def newtonRaphson( x ): 
+                h = func(x) / derivFunc(x) 
+                while abs(h) >= 0.00000001: 
+                    h = func(x)/derivFunc(x) 
+                # x(i+1) = x(i) - f(x) / f'(x) 
+                    x = x - h 
+                r.append(x)#مكررة قيم تتطلع 
+            # Initial values assumed 
+            newtonRaphson(x0)
+        r.sort()
+        n=len(r)
+        #k=[]#
+        k.append(r[0])
+        for i in range(1,n):
+            if r[i]-k[-1]<=.0000009:   #
+                d=1
+            else:
+                k.append(r[i])
+        #if k[1] true 
+        def y( c ): #trabezoid method #first area integral , we can complits this with 1 integration from root(point) 1 to 3
+            return  c*T/(1-c)-c**2 -p                                                     #but we choose two integrals.
+        def tra1(a, b, n):        #note**adding (-p)make this easier to integrating , without(-p) we most be use double integral
+            h = (b - a) / n 
+            s = (y(a) + y(b)) 
+            i = 1
+            while i < n: 
+                s += 2 * y(a + i * h) 
+                i += 1
+            return ((h / 2) * s)
+        x10 = k[0]      #lower limit
+        x2n = k[-1]        #upper limit
+        n = 100
+        I1=tra1(x10, x2n, n)     #I1 name to the first area
+        
+        if abs(I1) <=0.00005:#0.00005 
+            tem.append(T)   #lists to graph between T,n
+            nv.append(k[0])
+            nl.append(k[-1])
+            break       
+fig, ax = subplots()
+ax.plot(nv,tem,nl,tem)
+xlabel('nv and nl')
+ylabel('Tempreture')
+fig
+    </py-script>
+
+</div>
+<!-- <div id="plot"></div> -->
+            </div>
+                    
+
+
+
+
+                    <p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://github.com/mohamadamarneh/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted"> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+    <script>
+        function res(){
+
+            document.getElementById("ram").style.display="block";
+
+        }
+    </script>
+
+</body>
+
+</html>
